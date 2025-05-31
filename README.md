@@ -36,11 +36,14 @@ The main objective is to illustrate the fundamentals of real-time multiplayer
 - `pygame`
 - `attrs`
 
-```
 Install dependencies with:
-```bash
+
+``bash``
+
+```
 pip install -r requirements.txt
-``
+
+```
 
 ---
 
@@ -49,24 +52,28 @@ pip install -r requirements.txt
 ### 1. Start the Server
 
 Run the server to listen for incoming connections:
-```bash
-python server.py
-``
 
+``bash``
+
+```
+python server.py
+
+```
 ### 2. Start the Game Client
 
 On the same or another machine, run:
-```bash
-python game.py
-``
 
+``bash``
+
+```
+python game.py
+```
 > **Note:**  
 > You can change the server address and port in `server.py` and `networking.py`
  as needed.
 
 ---
 
-```
 ## 📁 Project Structure
 
 - **server.py**    – Multiplayer server logic and player synchronization  
@@ -92,10 +99,5 @@ python game.py
 ## 📜 License
 
 Open source ― for educational and experimental purposes.
-
----
-
-**Have fun experimenting with multiplayer game development in Python! 🕹️**
-```
 
 ---
