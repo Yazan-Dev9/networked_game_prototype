@@ -23,11 +23,8 @@ def main(*args):
     threading.Thread(target=server.start, daemon=True).start()
 
     # Add a local player (optional)
+    # Init Game
     game = Game()
-    name = input("Enter Your Name -> ")
-    player = Player(name)
-    player.color = "darkgreen"
-    game.add_player(player)
     # Start the game (in the main thread)
     try:
         game.start()
@@ -35,7 +32,7 @@ def main(*args):
         print("Exiting game...")
     finally:
         # On exit, make sure to close the server and game
-        # server.running = False
+        server.running = False
         # Wait for the server to shut down (if desired)
         time.sleep(1)
         sys.exit(0)
