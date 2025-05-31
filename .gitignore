@@ -1,0 +1,21 @@
+# Ignore virtual environment folders
+env/
+venv/
+
+# Ignore Python cache files
+__pycache__/
+__temp_pipreqsnb_folder/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore database files
+*.db
+*.sqlite3
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore editor-specific settings
+.vscode/
